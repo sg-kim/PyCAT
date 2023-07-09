@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+#top_contatiner_div{
+    margin: 10vh auto 10vh auto;
+}
+
 @media only screen and (max-width: 767px) {
 
 }
