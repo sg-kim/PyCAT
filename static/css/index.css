@@ -1,15 +1,133 @@
+
+:root {
+    --bgColor: white;
+    --fontColor: black;
+}
+
+.dark_mode {
+    --bgColor: #1e1e1e;
+    --fontColor: lightgray;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    background-color: var(--bgColor);
+    color: var(--fontColor);
 }
 
-#top_contatiner_div{
+#top_container_div{
+    text-align: center;
     margin: 10vh auto 10vh auto;
 }
 
+#top_container_div hr{
+    width: 80vw;
+}
+
+#privacy_policy_title_div {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#privacy_policy_content_div {
+    margin: 10vh 10vw 10vh 10vw;
+    text-align: left;
+}
+
+#privacy_policy_control_div {
+    margin: 10vh 10vw 10vh 10vw;
+    text-align: right;
+}
+
+#privacy_policy_control_div .switch {
+    position: relative;
+    display: inline-block;
+    /* width: 60px;
+    height: 34px; */
+    width: 3em;
+    height: 1.5em;
+}
+  
+#privacy_policy_control_div .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+#privacy_policy_control_div .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+#privacy_policy_control_div .slider:before {
+    position: absolute;
+    content: "";
+    /* height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px; */
+    height: 1.3em;
+    width: 1.3em;
+    left: 0.1em;
+    bottom: 0.1em;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+#privacy_policy_control_div input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+#privacy_policy_control_div input:focus + .slider {
+    /* box-shadow: 0 0 1px #2196F3; */
+    box-shadow: 0 0 0 #2196F3;
+}
+  
+#privacy_policy_control_div input:checked + .slider:before {
+    /* -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px); */
+    -webkit-transform: translateX(1.5em);
+    -ms-transform: translateX(1.5em);
+    transform: translateX(1.5em);
+}
+  
+/* Rounded sliders */
+#privacy_policy_control_div .slider.round {
+    /* border-radius: 34px; */
+    border-radius: 1em;
+}
+  
+#privacy_policy_control_div .slider.round:before {
+    /* border-radius: 50%; */
+    border-radius: 1em;
+}
+
 @media only screen and (max-width: 767px) {
+
+#top_container_div hr{
+    width: 90vw;
+}
+
+#privacy_policy_title_div {
+    font-size: x-large;
+    font-weight: bold;
+}
+#privacy_policy_content_div {
+    margin: 5vh 5vw 5vh 5vw;
+    text-align: left;
+}
 
 }
