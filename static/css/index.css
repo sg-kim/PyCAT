@@ -40,7 +40,14 @@ body {
 
 #privacy_policy_control_div {
     margin: 10vh 10vw 10vh 10vw;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#privacy_policy_control_div span {
+    /* margin: 0 1em 0 0;  */
+    padding: 0 0.5em 0 0; 
 }
 
 #privacy_policy_control_div .switch {
